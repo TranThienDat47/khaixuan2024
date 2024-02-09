@@ -1,0 +1,262 @@
+html {
+  box-sizing: border-box;
+  font-family: "Comforter", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://thietbiketnoi.com/wp-content/uploads/2024/01/phong-nen-hinh-nen-background-dep-cho-tet-chuc-mung-nam-moi-2024-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.item-lixi {
+  background-image: url("./image/item.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 3vw;
+  height: 8vh;
+  transform: rotate(0deg);
+  border-radius: 6px;
+  cursor: pointer;
+  /* transform: ; */
+}
+.item-lixi:hover {
+  box-shadow: 0 0 23px 3px #eff511c9;
+}
+
+@keyframes item-lixi {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.wrapper-lixi {
+  position: absolute;
+}
+
+.wrapper-lixi-1 {
+  left: 25.4vw;
+  top: 21vh;
+}
+.wrapper-lixi-1 .item-lixi {
+  animation: item-lixi linear infinite 3s;
+  transform-origin: top center;
+}
+
+.wrapper-lixi-2 {
+  left: 42vw;
+  top: 42.1vh;
+}
+.wrapper-lixi-2 .item-lixi {
+  animation: item-lixi linear infinite 2s;
+  transform-origin: top center;
+}
+.wrapper-lixi-3 {
+  left: 56.3vw;
+  top: 49.1vh;
+}
+.wrapper-lixi-3 .item-lixi {
+  animation: item-lixi linear infinite 4s;
+  transform-origin: top center;
+}
+
+.wrapper-lixi-4 {
+  left: 69.8vw;
+  top: 47.05vh;
+}
+.wrapper-lixi-4 .item-lixi {
+  animation: item-lixi linear infinite 3.4s;
+  transform-origin: top center;
+}
+.wrapper-lixi-5 {
+  left: 37.5vw;
+  top: 22.5vh;
+}
+.wrapper-lixi-5 .item-lixi {
+  animation: item-lixi linear infinite 5s;
+  transform-origin: top center;
+}
+
+.mua-lixi {
+  position: absolute;
+  top: 3vh;
+  background-image: url("./image/item2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 25vw;
+  height: 50vh;
+  animation: item-lixi2 linear infinite 2s;
+  transform-origin: 50% 20%;
+}
+
+@keyframes item-lixi2 {
+  0% {
+    transform: rotate(4deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+.mua-lixi-2 {
+  right: 26vw;
+  top: 48vh;
+
+  animation: item-lixi2 linear infinite 3s;
+  transform-origin: 50% 10%;
+}
+
+.modal,
+.thiep {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.modal .content {
+  display: flex;
+  height: 100%;
+}
+
+.content-left {
+  background-color: #e00f0fe3;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-middle > div > div:hover {
+  opacity: 0.8;
+}
+
+.content-middle > div:active {
+  background-color: antiquewhite;
+}
+
+.content-middle > div {
+  background-color: rgb(206, 127, 43);
+  padding: 16px;
+  border-radius: 999px;
+  font-size: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-middle > div > div {
+  background-color: rgb(254, 243, 229);
+  border-radius: 999px;
+  padding: 16px;
+}
+
+.content-right {
+  background-color: #e00f0fe3;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caudoi {
+  font-size: 52px;
+  font-weight: 600;
+  width: 205px;
+  height: 501px;
+  background-color: rgb(132, 76, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.caudoi > div {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  background-color: aliceblue;
+}
+
+.caudoi > div > div {
+  width: 50%;
+}
+
+.thiep {
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  animation: thiep linear 0.4s;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+}
+
+.inner-thiep {
+  background-image: url("https://lh3.googleusercontent.com/-FnQOeeiC3og/YfNo7mK1uHI/AAAAAAAA4jY/BG8jEW68cBQNbqaL6796C8ZH6LjlFx3UACNcBGAsYHQ/s0/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 66vw;
+  height: 83vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-thiep {
+  font-size: 45px;
+  width: 345px;
+  margin-right: 62px;
+  color: #902424;
+}

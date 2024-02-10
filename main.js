@@ -39,7 +39,7 @@ const listThiep = [
     {
         id: 1,
         title: `Năm hết Tết đến, rước lộc vào nhà, quà cáp bao la, mọi nhà no đủ,
-        vàng bạc đầy tủ, gia chủ phát tài, già trẻ gái trai, sum vầy hạnh`,
+        vàng bạc đầy tủ, gia chủ phát tài, già trẻ gái trai, sum vầy hạnh phúc!`,
         fontSize: 44,
     },
     {
